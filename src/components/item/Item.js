@@ -3,18 +3,29 @@
 ##############################################*/
 // Modulos
 // Estilos
-import './CartWidget.css';
+
+import './Item.css';
+
 // Componentes
+import ItemCounter from '../itemCounter/ItemCounter';
 // Core
 
 /*############################################ 
                 Lógica
 ##############################################*/
-const CartWidget = (props) => { // * Funcion contructora
+const Item = (props) => { // * Funcion contructora
+
+    const {nombre, descripcion, categoria, precio, stock} = props.data
 
     // * retorno que se va a renderizar
     return(
-        <i class="bi bi-cart">{props.count}</i>
+        <div>
+            <h5>{nombre}</h5>
+            <p>{descripcion}</p>
+            <p>{categoria}</p>
+            <p>{precio}</p>
+            <ItemCounter stock={stock}/>
+        </div>
     )
 }
 
@@ -23,4 +34,4 @@ const CartWidget = (props) => { // * Funcion contructora
                 Exportación
 ##############################################*/
 
-export default CartWidget
+export default Item

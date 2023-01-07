@@ -4,17 +4,24 @@
 // Modulos
 // Estilos
 import './ItemListContainer.css';
+
 // Componentes
+import ItemList from '../itemList/ItemList';
 // Core
 
 /*############################################ 
                 Lógica
 ##############################################*/
-const ItemListContainer = (props) => { // * Funcion contructora
+const ItemListContainer = () => { // * Funcion contructora
 
     // * retorno que se va a renderizar
     return(
-        <p>Este es un itemListContainer y se dice: "{props.greeting}"</p>
+        <div>
+            <p>Este es el itemListContainer</p>
+            <ItemList/>
+        </div>
+        
+        
     )
 }
 

@@ -12,10 +12,10 @@ import './index.css';
 //import App from './App';
 import NavBar from './components/navbar/NavBar.js'
 import Footer from './components/footer/Footer.js'
+import ItemListContainer from './components/itemListContainer/ItemListContainer.js';
 
 // * Core
 import reportWebVitals from './reportWebVitals';
-import ItemListContainer from './components/itemListContainer/ItemListContainer.js';
 
 /*############################################ 
                 Lógica
@@ -24,9 +24,9 @@ import ItemListContainer from './components/itemListContainer/ItemListContainer.
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <NavBar></NavBar>
-    <ItemListContainer greeting="VitaNet la mejor tienda"/>
-    <Footer></Footer>
+    <NavBar/>
+    <ItemListContainer/>
+    <Footer/>
   </React.StrictMode>
 );
 

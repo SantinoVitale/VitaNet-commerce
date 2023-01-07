@@ -4,6 +4,7 @@
     color: aliceblue;
     padding: 15px;
     align-items: center;
+    justify-content: space-between;
 }
 .header h1{
     margin: 0;
