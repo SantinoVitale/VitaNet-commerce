@@ -2,13 +2,10 @@
                 Importaciones
 ##############################################*/
 // Modulos
-import { Link } from 'react-router-dom';
+
 import Card from 'react-bootstrap/Card';
-
 // Estilos
-
-import './Item.css';
-
+import './ItemDetail.css';
 // Componentes
 import ItemCounter from '../itemCounter/ItemCounter';
 // Core
@@ -16,21 +13,19 @@ import ItemCounter from '../itemCounter/ItemCounter';
 /*############################################ 
                 Lógica
 ##############################################*/
-const Item = (props) => { // * Funcion contructora
+const ItemDetail = (props) => { // * Funcion contructora
 
-    const {nombre, imagen, descripcion, precio, stock, id} = props.data
-
+    const lista = props.data
     // * retorno que se va a renderizar
     return(
         <Card style={{ width: '18rem'}}>
-            <Card.Img variant="top" src={imagen} />
+            <Card.Img variant="top" src={"../"+ lista[0].imagen} />
                 <Card.Body>
-                    <Card.Title>{nombre} || ${precio}</Card.Title>
+                    <Card.Title>{lista[0].nombre} || ${lista[0].precio}</Card.Title>
                     <Card.Text>
-                        {descripcion}
+                        {lista[0].descripcion}
                     </Card.Text>
-                    <Link to={`/producto/${id}`}>Ver producto</Link>
-                    <ItemCounter stock={stock}/>
+                    <ItemCounter stock={lista[0].stock}/>
                 </Card.Body>
         </Card>
     )
@@ -41,4 +36,4 @@ const Item = (props) => { // * Funcion contructora
                 Exportación
 ##############################################*/
 
-export default Item
+export default ItemDetail

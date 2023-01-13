@@ -12,12 +12,12 @@ import ItemList from '../itemList/ItemList';
 /*############################################ 
                 Lógica
 ##############################################*/
-const ItemListContainer = () => { // * Funcion contructora
+const ItemListContainer = (props) => { // * Funcion contructora
 
     // * retorno que se va a renderizar
     return(
-        <div>
-            <p>Este es el itemListContainer</p>
+        <div className='itemListContainer'>
+            <p>{props.greeting}</p>
             <ItemList/>
         </div>
         

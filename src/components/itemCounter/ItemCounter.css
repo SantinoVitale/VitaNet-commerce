@@ -1,0 +1,25 @@
+.itemCount{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    color: #fff!important;
+    background-color: #484848!important;
+    border: none;
+    display: inline-block;
+    outline: 0;
+    padding: 6px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none!important;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    margin: 15px;
+}
+
+.itemCount p{
+    display: flex;
+    align-items: center;
+}

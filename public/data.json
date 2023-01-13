@@ -1,0 +1,191 @@
+[
+    {
+        "id": 0,
+        "nombre": "Procesador Amd Ryzen 3 4100 3.8 Ghz Am4 Oem",
+        "categoria": "Procesadores",
+        "descripcion": "N° de núcleos de CPU: 4. N° de hilos: 8. Package: AM4. Requiere Placa de Video Adicional. Incluye Cooler AMD",
+        "imagen":"./img/ryzen3-4100.jpg",
+        "precio": 152.85,
+        "stock": 15
+    },
+    {
+        "id": 1,
+        "nombre": "Procesador Intel Core I5-10400 2.9 Ghz S1200 - Solo Con Pc",
+        "categoria": "Procesadores",
+        "descripcion": "• Procesador Intel Core I5-10400. Gráficos del procesador: gráficos UHD Intel® 630. Cantidad de núcleos: 6. Cantidad de subprocesos: 12.",
+        "imagen":"./img/i510400.jpg",
+        "precio": 303.74,
+        "stock": 20
+    },
+    {
+        "id": 2,
+        "nombre": "Motherboard Am4 Msi A520m - A Pro",
+        "categoria": "Motherboard",
+        "descripcion": "Mother Board MSI A520M-A PRO. Soporta procesadores Desktop 3ra Gen AMD Ryzen™ Desktop y AMD Ryzen™ 4000 Serie G.",
+        "imagen":"./img/mb-am4-msi-a520m-a-pro.jpg",
+        "precio": 113.59,
+        "stock": 10
+    },
+    {
+        "id": 3,
+        "nombre": "Motherboard 1200 Gigabyte B560m - Ds3h V2 - Solo Con Pc",
+        "categoria": "Motherboard",
+        "descripcion": "Placa base Intel® B560 Ultra Durable con VRM digital directo de 6 + 2 fases, diseño PCIe 4.0 * completo.",
+        "imagen":"./img/mb-1200-gigabyte.jpg",
+        "precio": 142.06,
+        "stock": 5
+    },
+    {
+        "id": 4,
+        "nombre": "Memoria Udimm Ddr4 8 Gb 2666 Micron",
+        "categoria": "MemoriasRAM",
+        "descripcion": "Memoria RAM Udimm Ddr4 de 8 Gb con una frecuencia de 2666 MHz",
+        "imagen":"./img/memoria-udimm-ddr4-8-gb-2666-micron.jpg",
+        "precio": 33.87,
+        "stock": 8
+    },
+    {
+        "id": 5,
+        "nombre": "Memoria Udimm Ddr4 16 Gb Crucial 3200 Ct16g4dfra32a Cl22",
+        "categoria": "MemoriasRAM",
+        "descripcion": "Memoria RAM Udimm Crucial Ddr-4 de 16Gb a 3200MHz 1.2v cl22",
+        "imagen":"./img/memoria-udimm-ddr4-16-gb-2666-micron.jpg",
+        "precio": 72.53,
+        "stock": 6
+    },
+    {
+        "id": 6,
+        "nombre": "Disco Ssd 256 Gb Hikvision Minder M.2 Nvme",
+        "categoria": "DiscosSolidos",
+        "descripcion": "Ssd M.2 NVMe Hikvision. Alta velocidad de lectura / escritura. Clase Gaming",
+        "imagen":"./img/hikvision-255.jpg",
+        "precio": 38.77,
+        "stock": 10
+    },
+    {
+        "id": 7,
+        "nombre": "Disco Hdd 500 Gb Sata3 8 Mb Seagate - Pull",
+        "categoria": "DiscosDuros",
+        "descripcion": "Unidad de almacenamiento HDD de 500GB. Interfaces: SATA III. Factor de forma 3.5 in. Tecnología de almacenamiento: HDD Interno.",
+        "imagen":"./img/disco-hdd-500-gb-sata3-8-mb-seagate-pull.jpg",
+        "precio": 30.82,
+        "stock": 12
+    },
+    {
+        "id": 8,
+        "nombre": "Fuente Atx Cougar Xtc450 (cgr St-450) 80p White",
+        "categoria": "FuenteAltaGamma",
+        "descripcion": "Fuente XTC 450W. Confiabilidad rígida, silencio extremo. Hasta un 86% de eficiencia por debajo de 230V.",
+        "imagen":"./img/fuente-cougar-xtc450-cgr-st-450-80p-white.jpg",
+        "precio": 48.81,
+        "stock": 10
+    },
+    {
+        "id": 9,
+        "nombre": "Fuente Atx Noganet 550w Atx P4",
+        "categoria": "FuenteGenerica",
+        "descripcion": "Fuente para pc de ATX 550W Compatible con Intel, AMD Dual y Multicore.",
+        "imagen":"./img/fuente-atx-noganet-550w-atx-p4.jpg",
+        "precio": 28.81,
+        "stock": 5
+    },
+    {
+        "id": 10,
+        "nombre": "Gabinete Letos Gamer Le-f19 Sin Fuente",
+        "categoria": "Gabinetes",
+        "descripcion": "Gabinete Letos Gamer Le-f19 Sin Fuente",
+        "imagen":"./img/gabinete-letos-gamer-le-f19-sin-fuente.jpg",
+        "precio": 72.74,
+        "stock": 4
+    },
+    {
+        "id": 11,
+        "nombre": "Placa De Video 4 Gb Zotac 1n595 Gtx 1650 Amp Gaming Gddr6",
+        "categoria": "PlacaVideo",
+        "descripcion": "Basado en la nueva arquitectura NVIDIA Turing, está equipado con memoria ultrarrápida GDDR6. Prepárate para ser rápido y fuerte.",
+        "imagen":"./img/pci-e-4-gb-zotac-1n595-gtx-1650-amp-gaming-gddr6.jpg",
+        "precio": 481.32,
+        "stock": 10
+    },
+    {
+        "id": 12,
+        "nombre": "Placa De Video 6 Gb Zotac 5n509 Rtx 2060 Black Gddr6",
+        "categoria": "PlacaVideo",
+        "descripcion": "La nueva generación de tarjetas gráficas ZOTAC GAMING GeForce está aquí.",
+        "imagen":"./img/pci-e-6-gb-zotac-5n509-rtx-2060-black-gddr6.jpg",
+        "precio": 598.34,
+        "stock": 10
+    },
+    {
+        "id": 13,
+        "nombre": "Teclado Gamer Game Pro Gk-70m Mecanico Rgb",
+        "categoria": "Teclados",
+        "descripcion": "Teclado Mecánico TKL con RGB ideal para el Gaming",
+        "imagen":"./img/gk-70m-rgb.jpg",
+        "precio": 40.86,
+        "stock": 10
+    },
+    {
+        "id": 14,
+        "nombre": "Teclado Cougar Attack X3 Rgb 2018",
+        "categoria": "Teclados",
+        "descripcion": "Teclado Mecánico Con Switches Cherry MX Retroiluminado RGB.",
+        "imagen":"./img/cougar-attack2018.jpg",
+        "precio": 117.78,
+        "stock": 10
+    },
+    {
+        "id": 15,
+        "nombre": "Mouse Gaming Aliver Dmo-0101 Iron Man",
+        "categoria": "Mouses",
+        "descripcion": "Mouse Gamer Retroiluminado Diseño ergonómico, único y original de Iron Man Conexion Mediante Cable USB 2.0 de 1.5m.",
+        "imagen":"./img/iron-man.jpg",
+        "precio": 15.57,
+        "stock": 10
+    },
+    {
+        "id": 16,
+        "nombre": "Mouse Gamer Wesdar Wd-Gm2-Black+Green",
+        "categoria": "Mouses",
+        "descripcion": "Mouse Gamer USB. Diseño ergonómico y ultra durable. Luz LED verde incorporada. Contiene 8 Botones.",
+        "imagen":"./img/wesdar.jpg",
+        "precio": 15.93,
+        "stock": 10
+    },
+    {
+        "id": 17,
+        "nombre": "Auricular Gamer Game Pro Gh-10 7.1 Rgb",
+        "categoria": "Auriculares",
+        "descripcion": " Auriculares RGB Gaming con Micrófono. Microfono omnidireccional de alta Sensibilidad. Drivers de 50mm con RGB de 7 colores.",
+        "imagen":"./img/auricular-gamer-game-pro-gh-10-71-rgb.jpg",
+        "precio": 27.55,
+        "stock": 10
+    },
+    {
+        "id": 18,
+        "nombre": "Auricular Gamer Wesdar Wd-Gh30-Black + Ps2 Adapter",
+        "categoria": "Auriculares",
+        "descripcion": "Auriculares ideal para el Gaming. Incluye Micrófono ajustable y Retroiluminación RGB.",
+        "imagen":"./img/auricular-gamer-wesdar-wd-gh30-black-ps2-adapter.jpg",
+        "precio": 20.68,
+        "stock": 10
+    },
+    {
+        "id": 19,
+        "nombre": "Monitor 24 Samsung Lf24t350fhlczb",
+        "categoria": "Monitores",
+        "descripcion": "Monitor 24 pulgadas / 52,7 cm. Relación de aspecto : 16:9. Resolución óptima : 1920 x 1080 a 75 Hz. Tiempo de respuesta : 5 ms GTG. Brillo :  250 cd/m². Señal de entrada: VGA, HDMI",
+        "imagen":"./img/monitor-24-led-samsung-lf24t350fhlczb.jpg",
+        "precio": 286.89,
+        "stock": 10
+    },
+    {
+        "id": 20,
+        "nombre": "Monitor 24 Philips 241v8l/77",
+        "categoria": "Monitores",
+        "descripcion": "Monitor LCD de 24 (60,5 cm/23,8” diag.). Resolución Máxima de 1920 x 1080 (Full HD).",
+        "imagen":"./img/monitor-24-philips-241v8l77.jpg",
+        "precio": 280.08,
+        "stock": 10
+    }
+]

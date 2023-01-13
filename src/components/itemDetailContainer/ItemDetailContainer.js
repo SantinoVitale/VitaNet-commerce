@@ -3,39 +3,43 @@
 ##############################################*/
 // Modulos
 import { useEffect, useState } from 'react';
-// Estilos
-import './ItemList.css';
+import { useParams } from 'react-router-dom';
 
+// Estilos
+import './ItemDetailContainer.css';
 // Componentes
-import Item from '../item/Item.js';
+import ItemDetail from '../itemDetail/ItemDetail';
+
+
 
 // Core
 
 /*############################################ 
                 Lógica
 ##############################################*/
-const ItemList = () => { // * Funcion contructora
-
+const ItemDetailContainer = (props) => { // * Funcion contructora
+    
     const [productos, setProductos] = useState()
+    const {productoId} = useParams()
+    
 
     useEffect(() => {
-        fetch('data.json')
+        fetch('../data.json')
             .then(res=>res.json())
-            .then(json=> setProductos(json.map(productos => <Item key={productos.id} id={"producto" + productos.id} data={productos}/>)))
-    }, [])
+            .then(json => filtrar(json))
+    }, [productoId])
+
+    const filtrar = (data) => {
+
+        const resultado = data.filter(data => data.id === +(productoId))
+        setProductos(<ItemDetail data={resultado} key={resultado.id} id={"producto" + resultado.id}/>)
+    }
 
     // * retorno que se va a renderizar
     return(
-        
-        <div className='itemListCont'>
-            <h3>Nuestro Productos</h3>
-            <div className='itemList'>
+        <div>
             {productos}
-            </div>
-            
         </div>
-        
-
     )
 }
 
@@ -44,4 +48,4 @@ const ItemList = () => { // * Funcion contructora
                 Exportación
 ##############################################*/
 
-export default ItemList
+export default ItemDetailContainer

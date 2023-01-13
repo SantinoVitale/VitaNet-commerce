@@ -14,7 +14,7 @@ const CartWidget = (props) => { // * Funcion contructora
 
     // * retorno que se va a renderizar
     return(
-        <i class="bi bi-cart">{props.count}</i>
+        <i className="bi bi-cart">{props.count}</i>
     )
 }
 
