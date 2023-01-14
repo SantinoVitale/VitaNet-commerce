@@ -12,7 +12,7 @@
         "id": 1,
         "nombre": "Procesador Intel Core I5-10400 2.9 Ghz S1200 - Solo Con Pc",
         "categoria": "Procesadores",
-        "descripcion": "• Procesador Intel Core I5-10400. Gráficos del procesador: gráficos UHD Intel® 630. Cantidad de núcleos: 6. Cantidad de subprocesos: 12.",
+        "descripcion": "Procesador Intel Core I5-10400. Gráficos del procesador: gráficos UHD Intel® 630. Cantidad de núcleos: 6. Cantidad de subprocesos: 12.",
         "imagen":"./img/i510400.jpg",
         "precio": 303.74,
         "stock": 20

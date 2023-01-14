@@ -18,16 +18,19 @@ const ItemDetail = (props) => { // * Funcion contructora
     const lista = props.data
     // * retorno que se va a renderizar
     return(
-        <Card style={{ width: '18rem'}}>
-            <Card.Img variant="top" src={"../"+ lista[0].imagen} />
-                <Card.Body>
-                    <Card.Title>{lista[0].nombre} || ${lista[0].precio}</Card.Title>
-                    <Card.Text>
-                        {lista[0].descripcion}
-                    </Card.Text>
-                    <ItemCounter stock={lista[0].stock}/>
-                </Card.Body>
-        </Card>
+        <div className='productoContenedor'>
+            <img src={"../" + lista[0].imagen}/>
+            <div className='producto'>
+                <h1>
+                    {lista[0].nombre}
+                </h1>
+                <p>
+                    {lista[0].descripcion}
+                </p>
+                <h3>Precio: ${lista[0].precio}</h3>
+                <ItemCounter stock={lista[0].stock}/>
+            </div>
+        </div>
     )
 }
 

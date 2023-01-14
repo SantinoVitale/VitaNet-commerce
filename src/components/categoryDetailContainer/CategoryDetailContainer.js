@@ -34,8 +34,12 @@ const CategoryDetailContainer = (props) => { // * Funcion contructora
 
     // * retorno que se va a renderizar
     return(
-        <div>
+        <div className='categoryListCont'>
+            <h3>Nuestro {nombreCategoria}</h3>
+            <div className='categoryList'>
             {productos}
+            </div>
+            
         </div>
     )
 }

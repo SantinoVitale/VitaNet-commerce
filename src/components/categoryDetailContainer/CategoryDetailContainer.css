@@ -1,0 +1,13 @@
+.categoryList{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.categoryListCont{
+    padding: 150px 0;
+}
