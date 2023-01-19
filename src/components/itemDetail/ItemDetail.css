@@ -7,3 +7,12 @@
 .producto{
     margin-top: 500px;
 }
+
+@media (min-width: 1024px){
+    .producto{
+        margin-top: 300px;
+    }
+    .imagenProducto{
+        height: 800px;
+    }
+}

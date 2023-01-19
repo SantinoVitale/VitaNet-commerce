@@ -32,7 +32,7 @@ const ItemDetailContainer = (props) => { // * Funcion contructora
     const filtrar = (data) => {
 
         const resultado = data.filter(data => data.id === +(productoId))
-        setProductos(<ItemDetail data={resultado} key={resultado.id} id={"producto" + resultado.id}/>)
+        setProductos(resultado.map(resultado => <ItemDetail data={resultado} key={resultado.id} id={"producto" + resultado.id}/>))
     }
 
     // * retorno que se va a renderizar

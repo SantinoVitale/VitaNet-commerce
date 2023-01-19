@@ -8,6 +8,7 @@ import Card from 'react-bootstrap/Card';
 import './ItemDetail.css';
 // Componentes
 import ItemCounter from '../itemCounter/ItemCounter';
+import { useEffect, useState } from 'react';
 // Core
 
 /*############################################ 
@@ -15,20 +16,32 @@ import ItemCounter from '../itemCounter/ItemCounter';
 ##############################################*/
 const ItemDetail = (props) => { // * Funcion contructora
 
-    const lista = props.data
+    const [cantidad, setCantidad] = useState(0);
+
+    const {nombre, imagen, descripcion, precio, stock} = props.data
+
+    const tomarCantidad = (numero) => {
+        setCantidad(numero)
+    }
+    
+    const onAdd = () => {
+        console.log(`La cantidad de productos son ${cantidad} y el precio total es ${cantidad * precio}`);
+    }
+
     // * retorno que se va a renderizar
     return(
         <div className='productoContenedor'>
-            <img src={"../" + lista[0].imagen}/>
+            <img className="imagenProducto" src={"../" + imagen}/>
             <div className='producto'>
                 <h1>
-                    {lista[0].nombre}
+                    {nombre}
                 </h1>
                 <p>
-                    {lista[0].descripcion}
+                    {descripcion}
                 </p>
-                <h3>Precio: ${lista[0].precio}</h3>
-                <ItemCounter stock={lista[0].stock}/>
+                <h3>Precio: ${precio}</h3>
+                <ItemCounter stock={stock} cantidades={tomarCantidad}/>
+                <button className='button' onClick={onAdd}>On Add</button>
             </div>
         </div>
     )
