@@ -28,7 +28,7 @@ const ItemList = () => { // * Funcion contructora
     return(
         
         <div className='itemListCont'>
-            <h3>Nuestro Productos</h3>
+            <h3>Nuestros Productos</h3>
             <div className='itemList'>
             {productos}
             </div>

@@ -2,13 +2,14 @@
                 Importaciones
 ##############################################*/
 // Modulos
+import { useState } from 'react';
 
-import Card from 'react-bootstrap/Card';
 // Estilos
 import './ItemDetail.css';
 // Componentes
 import ItemCounter from '../itemCounter/ItemCounter';
-import { useEffect, useState } from 'react';
+
+import {useCartContext} from '../context/CartContext';
 // Core
 
 /*############################################ 
@@ -18,20 +19,35 @@ const ItemDetail = (props) => { // * Funcion contructora
 
     const [cantidad, setCantidad] = useState(0);
 
-    const {nombre, imagen, descripcion, precio, stock} = props.data
+    const {id, nombre, imagen, descripcion, precio, stock} = props.data
+
+    const {addItem} = useCartContext()
 
     const tomarCantidad = (numero) => {
         setCantidad(numero)
     }
     
     const onAdd = () => {
-        console.log(`La cantidad de productos son ${cantidad} y el precio total es ${cantidad * precio}`);
+        if(cantidad !== 0){
+            const producto = {
+            id:  id,
+            tittle: nombre,
+            description: descripcion,
+            imagen: imagen,
+            price: precio,
+            count: cantidad,
+            }
+            addItem(producto)
+        } else {
+            alert("Agregue al menos un producto")
+        }
+        
     }
 
     // * retorno que se va a renderizar
     return(
         <div className='productoContenedor'>
-            <img className="imagenProducto" src={"../" + imagen}/>
+            <img alt='Imagen producto' className="imagenProducto" src={"../" + imagen}/>
             <div className='producto'>
                 <h1>
                     {nombre}

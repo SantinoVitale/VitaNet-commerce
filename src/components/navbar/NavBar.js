@@ -48,7 +48,7 @@ const NavBar = (props) => { // * Funcion contructora
                         </NavDropdown>
                     </li>
                     <li><Link to={"/AboutUs"}>Nosotros</Link></li>
-                    <CartWidget/>
+                    <Link to={"/carrito"}><CartWidget/></Link>
                 </ul>
             </div>
         </header>
