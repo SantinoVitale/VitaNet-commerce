@@ -16,7 +16,7 @@ import CartWidget from '../cartWidget/CartWidget';
 /*############################################ 
                 Lógica
 ##############################################*/
-const NavBar = (props) => { // * Funcion contructora
+const NavBar = () => { // * Funcion contructora
 
     // * retorno que se va a renderizar
     return(
@@ -48,7 +48,7 @@ const NavBar = (props) => { // * Funcion contructora
                         </NavDropdown>
                     </li>
                     <li><Link to={"/AboutUs"}>Nosotros</Link></li>
-                    <Link to={"/carrito"}><CartWidget/></Link>
+                    <li><Link to={"/carrito"}><CartWidget/></Link></li>
                 </ul>
             </div>
         </header>

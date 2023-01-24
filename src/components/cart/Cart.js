@@ -3,6 +3,8 @@
 ##############################################*/
 // Modulos
 // Estilos
+import { useEffect, useState } from 'react';
+import { useCartContext } from '../context/CartContext';
 import './Cart.css';
 // Componentes
 // Core
@@ -10,11 +12,14 @@ import './Cart.css';
 /*############################################ 
                 Lógica
 ##############################################*/
-const Cart = (props) => { // * Funcion contructora
+const Cart = () => { // * Funcion contructora
 
+   
     // * retorno que se va a renderizar
     return(
-        <div></div>
+        <div>
+            
+        </div>
     )
 }
 

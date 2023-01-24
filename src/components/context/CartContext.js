@@ -19,6 +19,7 @@ const CartProvider = ({children}) => {
 
     const [items, setItems] = useState([])
 
+
     const addItem = (data) => {
         if(validateItem(data.item)){
             alert("El producto ya esta en el carrito")
@@ -47,6 +48,14 @@ const CartProvider = ({children}) => {
         } else {
             return false
         }
+    }
+
+    const CartLength = () => {
+        return items.length
+    }
+
+    const showItems = () => { 
+        
     }
 
     return(

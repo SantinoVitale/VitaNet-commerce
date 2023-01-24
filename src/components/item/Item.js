@@ -10,7 +10,6 @@ import Card from 'react-bootstrap/Card';
 import './Item.css';
 
 // Componentes
-import ItemCounter from '../itemCounter/ItemCounter';
 // Core
 
 /*############################################ 
@@ -18,7 +17,7 @@ import ItemCounter from '../itemCounter/ItemCounter';
 ##############################################*/
 const Item = (props) => { // * Funcion contructora
 
-    const {nombre, imagen, descripcion, precio, stock, id} = props.data
+    const {nombre, imagen, descripcion, precio, id} = props.data
 
     // * retorno que se va a renderizar
     return(
@@ -30,7 +29,6 @@ const Item = (props) => { // * Funcion contructora
                         {descripcion}
                     </Card.Text>
                     <Link to={`/producto/${id}`}>Ver producto</Link>
-                    <ItemCounter stock={stock}/>
                 </Card.Body>
         </Card>
     )

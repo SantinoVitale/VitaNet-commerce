@@ -17,7 +17,6 @@ const ItemListContainer = (props) => { // * Funcion contructora
     // * retorno que se va a renderizar
     return(
         <div className='itemListContainer'>
-            <p>{props.greeting}</p>
             <ItemList/>
         </div>
         
