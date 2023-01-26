@@ -1,7 +1,20 @@
 .itemCount{
     display: flex;
-    justify-content: center;
+    width: 100%;
+    align-items: center;
 }
+
+.count{
+    border: 2px solid black;
+    padding: 24px;
+}
+
+.btn-vertical{
+    display: flex;
+    flex-direction: column
+}
+
+
 
 .button{
     color: #fff!important;
@@ -16,10 +29,22 @@
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
-    margin: 15px;
+    margin: 15px 0px;
 }
 
 .itemCount p{
     display: flex;
     align-items: center;
+}
+
+.btn-count{
+    color: #484848 !important;
+    background-color: #fff !important;
+    width: 50px;
+    margin: 0 !important;
+    border: 1px solid gray;
+}
+
+.btn-b{
+    border-bottom: none;
 }

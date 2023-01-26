@@ -44,9 +44,11 @@ const ItemCounter = (props) => { // * Funcion contructora
     // * retorno que se va a renderizar
     return(
         <div className='itemCount'>
-            <button className='button' onClick={addOne}>+</button>
-            <p>{count}</p>
-            <button className='button' onClick={disOne}>-</button>
+            <span className='count'>{count}</span>
+            <span className='btn-vertical'>
+                <button className='button btn-count btn-b' onClick={addOne}>+</button>
+                <button className='button btn-count' onClick={disOne}>-</button>
+            </span>
         </div>
     )
 }

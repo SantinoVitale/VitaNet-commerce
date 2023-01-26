@@ -56,8 +56,10 @@ const ItemDetail = (props) => { // * Funcion contructora
                     {descripcion}
                 </p>
                 <h3>Precio: ${precio}</h3>
-                <ItemCounter stock={stock} cantidades={tomarCantidad}/>
-                <button className='button' onClick={onAdd}>On Add</button>
+                <div className='addToCart'>
+                    <ItemCounter stock={stock} cantidades={tomarCantidad}/>
+                <button className='button' onClick={onAdd}>Agregar al carrito</button>
+                </div>
             </div>
         </div>
     )

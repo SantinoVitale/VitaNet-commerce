@@ -7,14 +7,13 @@ import { useParams } from 'react-router-dom';
 // Estilos
 import './CategoryDetailContainer.css';
 // Componentes
-import ItemDetail from '../itemDetailContainer/ItemDetailContainer';
 import CategoryDetail from '../categoryDetail/CategoryDetail';
 // Core
 
 /*############################################ 
                 Lógica
 ##############################################*/
-const CategoryDetailContainer = (props) => { // * Funcion contructora
+const CategoryDetailContainer = () => { // * Funcion contructora
 
     const [productos, setProductos] = useState()
     const {nombreCategoria} = useParams()

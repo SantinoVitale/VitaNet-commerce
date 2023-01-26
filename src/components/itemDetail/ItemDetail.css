@@ -8,6 +8,11 @@
     margin-top: 500px;
 }
 
+.addToCart{
+    display: flex;
+    flex-direction: column;
+}
+
 @media (min-width: 1024px){
     .producto{
         margin-top: 300px;

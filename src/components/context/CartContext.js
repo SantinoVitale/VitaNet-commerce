@@ -33,14 +33,17 @@ const CartProvider = ({children}) => {
         
     }
 
-    const deleteItem = (id) => {
-        const NuevaLista = items.filter(e => e.id !== id)
-        setItems(NuevaLista)
-    }
+    // ? Funcion que se va a usar en el cart.js
+    // ? const deleteItem = (id) => {
+    // ?    const NuevaLista = items.filter(e => e.id !== id)
+    // ?    setItems(NuevaLista)
+    // ? }
 
-    const clearCart = () => {
-        setItems([])
-    }
+    
+    // ? Funcion que se va a usar para el cart.js 
+    // ? const clearCart = () => {
+    // ?    setItems([])
+    // ? }
 
     const validateItem = (id) => {
         if(items.find(e => e.id === id)){
@@ -50,16 +53,18 @@ const CartProvider = ({children}) => {
         }
     }
 
-    const CartLength = () => {
+    const cartLength = () => {
         return items.length
     }
 
-    const showItems = () => { 
+    // ? Funcion que se va a usar para el cart.js 
+    // ? const showItems = () => {
+    // ? }
         
-    }
+    
 
     return(
-        <CartContext.Provider value={{addItem}}>
+        <CartContext.Provider value={{addItem, cartLength}}>
             {children}
         </CartContext.Provider>
     )
