@@ -4,11 +4,14 @@
 // Modulos
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import {collection, getDocs, query, where} from 'firebase/firestore'
+
 
 // Estilos
 import './ItemDetailContainer.css';
 // Componentes
 import ItemDetail from '../itemDetail/ItemDetail';
+import {db} from "../../services/firebase"
 
 
 
@@ -24,16 +27,22 @@ const ItemDetailContainer = (props) => { // * Funcion contructora
     
 
     useEffect(() => {
-        fetch('../data.json')
-            .then(res=>res.json())
-            .then(json => filtrar(json))
+        const getData = async()=>{
+            const queryRef = productoId ? query(collection(db,"listaProductos") , where("__name__","==",productoId)) : console.log('PRODUCTO FANTASMA')
+            const response = await getDocs(queryRef)
+            const docsInfo = response.docs.map(doc => {  
+                const newDoc= {
+                    id:doc.id,
+                    ...doc.data()
+                }
+                return newDoc
+        })
+        console.log(docsInfo);
+        setProductos(docsInfo.map(productos => <ItemDetail key={productos.id} data={productos}/>))
+        }
+        getData()
     }, [productoId])
 
-    const filtrar = (data) => {
-
-        const resultado = data.filter(data => data.id === +(productoId))
-        setProductos(resultado.map(resultado => <ItemDetail data={resultado} key={resultado.id} id={"producto" + resultado.id}/>))
-    }
 
     // * retorno que se va a renderizar
     return(

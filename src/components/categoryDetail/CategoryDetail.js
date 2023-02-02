@@ -3,10 +3,11 @@
 ##############################################*/
 // Modulos
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 // Estilos
 import './CategoryDetail.css';
 // Componentes
-import ItemCounter from '../itemCounter/ItemCounter';
+
 // Core
 
 /*############################################ 
@@ -14,7 +15,7 @@ import ItemCounter from '../itemCounter/ItemCounter';
 ##############################################*/
 const CategoryDetail = (props) => { // * Funcion contructora
 
-    const {nombre, imagen, descripcion, precio, stock} = props.data
+    const {nombre, imagen, descripcion, precio, id} = props.data
 
     // * retorno que se va a renderizar
     return(
@@ -25,7 +26,7 @@ const CategoryDetail = (props) => { // * Funcion contructora
                     <Card.Text>
                         {descripcion}
                     </Card.Text>
-                    <ItemCounter stock={stock}/>
+                    <Link to={`/producto/${id}`}>Ver producto</Link>
                 </Card.Body>
         </Card>
     )

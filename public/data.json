@@ -83,7 +83,7 @@
     {
         "id": 9,
         "nombre": "Fuente Atx Noganet 550w Atx P4",
-        "categoria": "FuenteGenerica",
+        "categoria": "FuenteGenericas",
         "descripcion": "Fuente para pc de ATX 550W Compatible con Intel, AMD Dual y Multicore.",
         "imagen":"./img/fuente-atx-noganet-550w-atx-p4.jpg",
         "precio": 28.81,

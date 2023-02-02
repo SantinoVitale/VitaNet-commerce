@@ -7,10 +7,14 @@
 }
 
 .productContainer {
-
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 15px;
 }
 
-.productContainer h1{
+h1{
     text-align: center;
 }
 
