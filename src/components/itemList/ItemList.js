@@ -31,7 +31,6 @@ const ItemList = () => { // * Funcion contructora
                 }
                 return newDoc
         })
-        console.log(queryRef);
         setProductos(docsInfo.map(productos => <Item key={productos.id} data={productos}/>))
         }
         getData()

@@ -37,7 +37,6 @@ const ItemDetailContainer = (props) => { // * Funcion contructora
                 }
                 return newDoc
         })
-        console.log(docsInfo);
         setProductos(docsInfo.map(productos => <ItemDetail key={productos.id} data={productos}/>))
         }
         getData()

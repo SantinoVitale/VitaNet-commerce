@@ -23,10 +23,6 @@ const NavBar = () => { // * Funcion contructora
 
     const {cartLength} = useCartContext()
 
-    useEffect(() => {
-        setCantidad(cartLength)
-    }, [cartLength])
-
     // * retorno que se va a renderizar
     return(
         <header className='header'>

@@ -21,9 +21,8 @@ const CartProvider = ({children}) => {
 
 
     const addItem = (data) => {
-        if(validateItem(data.item)){
+        if(validateItem(data.id)){
             alert("El producto ya esta en el carrito")
-            
         } else {
             const listaActual = items
             listaActual.push(data)
@@ -34,37 +33,33 @@ const CartProvider = ({children}) => {
     }
 
     // ? Funcion que se va a usar en el cart.js
-    // ? const deleteItem = (id) => {
-    // ?    const NuevaLista = items.filter(e => e.id !== id)
-    // ?    setItems(NuevaLista)
-    // ? }
+
+    const deleteItem = (id) => {
+        setItems(items.filter(e => e.id !== id))
+    }
 
     
     // ? Funcion que se va a usar para el cart.js 
-    // ? const clearCart = () => {
-    // ?    setItems([])
-    // ? }
+    const clearCart = () => {
+        setItems([])
+    }
 
     const validateItem = (id) => {
         if(items.find(e => e.id === id)){
+            console.log("true");
             return true
         } else {
+            console.log("false");
             return false
         }
     }
 
     const cartLength = () => {
         return items.length
-    }
-
-    // ? Funcion que se va a usar para el cart.js 
-    // ? const showItems = () => {
-    // ? }
-        
-    
+    } 
 
     return(
-        <CartContext.Provider value={{addItem, cartLength}}>
+        <CartContext.Provider value={{addItem, cartLength, items, deleteItem, clearCart}}>
             {children}
         </CartContext.Provider>
     )
