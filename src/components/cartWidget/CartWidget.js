@@ -11,13 +11,13 @@ import './CartWidget.css';
 /*############################################ 
                 Lógica
 ##############################################*/
-const CartWidget = (props) => { // * Funcion contructora
+const CartWidget = () => { // * Funcion contructora
     const {items} = useCartContext()
 
     // * retorno que se va a renderizar
     return(
         <>
-            {items.length === 0 ? ( <></> ) : ( <i className="bi bi-cart">{props.cantidad}</i> )}
+            {items.length === 0 ? ( <></> ) : ( <i className="bi bi-cart">{items.length}</i> )}
         </>
         
     )

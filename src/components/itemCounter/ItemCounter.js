@@ -21,7 +21,7 @@ const ItemCounter = (props) => { // * Funcion contructora
 
     //Agregar un manejo de estado
     //UseState
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState(1)
 
     //funciones de suma y resta
     const addOne = () => {
@@ -29,14 +29,16 @@ const ItemCounter = (props) => { // * Funcion contructora
             setCount(count + 1)
 
             props.cantidades(count)
-        }
+            console.log(count);
+        } 
         
     }
     const disOne = () => {
-        if (count > 0){
+        if (count > 1){
             setCount(count - 1)
 
             props.cantidades(count)
+            console.log(count);
         }
         
     }

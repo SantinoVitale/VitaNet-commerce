@@ -36,8 +36,9 @@ const ItemDetail = (props) => { // * Funcion contructora
             imagen: imagen,
             price: precio,
             count: cantidad,
+            total: precio * cantidad,
             }
-            addItem(producto)
+            addItem(producto, cantidad)
         } else {
             alert("Agregue al menos un producto")
         }
@@ -57,8 +58,8 @@ const ItemDetail = (props) => { // * Funcion contructora
                 </p>
                 <h3>Precio: ${precio}</h3>
                 <div className='addToCart'>
-                    <ItemCounter stock={stock} cantidades={tomarCantidad}/>
-                <button className='button' onClick={onAdd}>Agregar al carrito</button>
+                    <ItemCounter initial={1} stock={stock} cantidades={tomarCantidad}/>
+                <button className='buttonDetail' onClick={onAdd}>Agregar al carrito</button>
                 </div>
             </div>
         </div>

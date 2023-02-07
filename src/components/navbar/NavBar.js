@@ -2,7 +2,6 @@
                 Importaciones
 ##############################################*/
 // Modulos
-import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 // Estilos
 import './NavBar.css';
@@ -11,7 +10,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // Componentes
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from '../cartWidget/CartWidget';
-import { useCartContext } from '../context/CartContext';
 // Core
 
 /*############################################ 
@@ -19,9 +17,6 @@ import { useCartContext } from '../context/CartContext';
 ##############################################*/
 const NavBar = () => { // * Funcion contructora
 
-    const [cantidad, setCantidad] = useState(0)
-
-    const {cartLength} = useCartContext()
 
     // * retorno que se va a renderizar
     return(
@@ -53,7 +48,7 @@ const NavBar = () => { // * Funcion contructora
                         </NavDropdown>
                     </li>
                     <li><Link to={"/AboutUs"}>Nosotros</Link></li>
-                    <li><Link to={"/carrito"}><CartWidget cantidad={cantidad}/></Link></li>
+                    <li><Link to={"/carrito"}><CartWidget/></Link></li>
                 </ul>
             </div>
         </header>

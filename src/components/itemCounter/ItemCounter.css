@@ -30,6 +30,7 @@
     cursor: pointer;
     white-space: nowrap;
     margin: 15px 0px;
+    width: fit-content;
 }
 
 .itemCount p{

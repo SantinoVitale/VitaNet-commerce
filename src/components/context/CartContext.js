@@ -20,14 +20,15 @@ const CartProvider = ({children}) => {
     const [items, setItems] = useState([])
 
 
-    const addItem = (data) => {
+    const addItem = (data, count) => {
         if(validateItem(data.id)){
-            alert("El producto ya esta en el carrito")
+            const productIndex = items.findIndex(element=>element.id===data.id);
+            items[productIndex].count = items[productIndex].count + count
+            items[productIndex].total = items[productIndex].price * items[productIndex].count
+            setItems([...items])
         } else {
-            const listaActual = items
-            listaActual.push(data)
-            setItems(listaActual)
-            console.log(items);
+            
+            setItems([...items, data])
         }
         
     }
@@ -54,12 +55,8 @@ const CartProvider = ({children}) => {
         }
     }
 
-    const cartLength = () => {
-        return items.length
-    } 
-
     return(
-        <CartContext.Provider value={{addItem, cartLength, items, deleteItem, clearCart}}>
+        <CartContext.Provider value={{addItem, items, deleteItem, clearCart}}>
             {children}
         </CartContext.Provider>
     )

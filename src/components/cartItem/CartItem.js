@@ -17,7 +17,7 @@ import './CartItem.css';
 ##############################################*/
 const CartItem = (props) => { // * Funcion contructora
     const {deleteItem} = useCartContext()
-    const {tittle, imagen, description, price, id} = props.data
+    const {tittle, imagen, description, price, total, id, count} = props.data
     
     const pushDelete = () => {
         deleteItem(id)
@@ -32,8 +32,18 @@ const CartItem = (props) => { // * Funcion contructora
                     <Card.Text>
                         {description}
                     </Card.Text>
+                    <Card.Text>
+                        Cantidad: {count}
+                    </Card.Text>
+                    <Card.Text>
+                        Total: {total}
+                    </Card.Text>
+                    <Card.Text>
+                        <button className='button' onClick={pushDelete}>Borrar del carrito</button>
+                    </Card.Text>
+                    
                 </Card.Body>
-                <button className='button' onClick={pushDelete}>Borrar del carrito</button>
+                
         </Card>
     )
 }
