@@ -1,0 +1,12 @@
+.separador {
+    padding-top: 250px;
+    margin-bottom: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.spinner{
+    height: 200px;
+    width: 200px;
+    font-size: 20px;
+}

@@ -48,7 +48,7 @@ const ItemDetail = (props) => { // * Funcion contructora
     // * retorno que se va a renderizar
     return(
         <div className='productoContenedor'>
-            <img alt='Imagen producto' className="imagenProducto" src={"../" + imagen}/>
+            <img alt='Imagen producto' className="imagenProducto" src={imagen}/>
             <div className='producto'>
                 <h1>
                     {nombre}

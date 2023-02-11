@@ -78,7 +78,7 @@ const Cart = () => { // * Funcion contructora
                     <div className='gridContainer'>
                         {cartItems}
                     </div>
-                    <h1>Total de la compra: {total}</h1>
+                    <h1>Total de la compra: ${total}</h1>
                     {orderId === undefined ? 
                     (<>
                     <div className='formContainer'>

@@ -32,7 +32,7 @@ const CategoryDetailContainer = () => { // * Funcion contructora
                 }
                 return newDoc
         })
-        setProductos(docsInfo.map(productos => <CategoryDetail data={productos}/>))
+        setProductos(docsInfo.map(productos => <CategoryDetail key={productos.id} data={productos}/>))
         }
         getData()
     }, [nombreCategoria])

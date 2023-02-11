@@ -20,7 +20,7 @@ const CategoryDetail = (props) => { // * Funcion contructora
     // * retorno que se va a renderizar
     return(
         <Card style={{ width: '18rem', margin: '50px'}}>
-            <Card.Img variant="top" src={"../"+ imagen} />
+            <Card.Img variant="top" src={imagen} />
                 <Card.Body>
                     <Card.Title>{nombre} || ${precio}</Card.Title>
                     <Card.Text>

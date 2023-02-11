@@ -44,8 +44,9 @@ const Home = () => { // * Funcion contructora
                 
                 {productos}
             </div>
+            <h1>Nuestras marcas</h1>
             <div className='brandContainer'>
-                <h1>Nuestras marcas</h1>
+                <img alt='Imagen marcas' src='./img/brandMarcas.jpg' height={"300px"}></img>
             </div>
         </div>
         

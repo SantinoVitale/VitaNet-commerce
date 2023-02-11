@@ -30,21 +30,21 @@ const NavBar = () => { // * Funcion contructora
                     <li>
                         <NavDropdown title="Categorías" id="basic-nav-dropdown">
                             <NavDropdown className='listaCategoria' title="Componentes PC" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1"><Link to={`/categoria/Procesadores`}>Procesadores</Link></NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.1"><Link to={"/categoria/Motherboard"}>Motherboard</Link></NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.1"><Link to={"/categoria/MemoriasRAM"}>Memorias RAM</Link></NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.1"><Link to={"/categoria/DiscosSolidos"}>Discos sólidos</Link></NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.1"><Link to={"/categoria/DiscosDuros"}>Discos duros</Link></NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.1"><Link to={"/categoria/FuenteAltaGamma"}>Fuente de alimentación de alta Gamma</Link></NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.1"><Link to={"/categoria/FuenteGenericas"}>Fuente de alimentación genericas</Link></NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.1"><Link to={"/categoria/PlacaVideo"}>Tarjetas gráficas</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link to={`/categoria/Procesadores`}>Procesadores</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link to={"/categoria/Motherboard"}>Motherboard</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link to={"/categoria/MemoriasRAM"}>Memorias RAM</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link to={"/categoria/DiscosSolidos"}>Discos sólidos</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link to={"/categoria/DiscosDuros"}>Discos duros</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link to={"/categoria/FuenteAltaGamma"}>Fuente de alimentación de alta Gamma</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link to={"/categoria/FuenteGenericas"}>Fuente de alimentación genericas</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link to={"/categoria/PlacaVideo"}>Tarjetas gráficas</Link></NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown className='listaCategoria' title="Periféricos" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1"><Link to={"/categoria/Teclados"}>Teclados</Link></NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.1"><Link to={"/categoria/Mouses"}>Mouses</Link></NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.1"><Link to={"/categoria/Auriculares"}>Auriculares</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link to={"/categoria/Teclados"}>Teclados</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link to={"/categoria/Mouses"}>Mouses</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link to={"/categoria/Auriculares"}>Auriculares</Link></NavDropdown.Item>
                             </NavDropdown>
-                            <NavDropdown.Item className='listaCategoria' href="#action/3.3"><Link to={"/categoria/Monitores"}>Monitores</Link></NavDropdown.Item>
+                            <NavDropdown.Item className='listaCategoria'><Link to={"/categoria/Monitores"}>Monitores</Link></NavDropdown.Item>
                         </NavDropdown>
                     </li>
                     <li><Link to={"/AboutUs"}>Nosotros</Link></li>

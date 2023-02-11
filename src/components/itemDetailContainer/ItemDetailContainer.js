@@ -12,6 +12,8 @@ import './ItemDetailContainer.css';
 // Componentes
 import ItemDetail from '../itemDetail/ItemDetail';
 import {db} from "../../services/firebase"
+import SpinnerRendering from '../spinner/Spinner';
+
 
 
 
@@ -45,9 +47,13 @@ const ItemDetailContainer = (props) => { // * Funcion contructora
 
     // * retorno que se va a renderizar
     return(
-        <div>
-            {productos}
-        </div>
+        <>
+            {productos === undefined ? ( 
+                    <SpinnerRendering/>
+                    
+                
+            ) : <div>{productos}</div>}
+        </>
     )
 }
 

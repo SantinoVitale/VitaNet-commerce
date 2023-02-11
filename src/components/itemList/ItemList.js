@@ -10,6 +10,7 @@ import './ItemList.css';
 // Componentes
 import Item from '../item/Item.js';
 import { db } from '../../services/firebase';
+import SpinnerRendering from '../spinner/Spinner';
 
 // Core
 
@@ -41,10 +42,11 @@ const ItemList = () => { // * Funcion contructora
         
         <div className='itemListCont'>
             <h3>Nuestros Productos</h3>
+            {productos === undefined ? (<SpinnerRendering/>) : 
             <div className='itemList'>
             {productos}
             </div>
-            
+            }
         </div>
         
 
