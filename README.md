@@ -24,5 +24,5 @@ Bienvenido a mi proyecto de e-commerce con la tematica de venta de productos tec
 	 - [x] Brief (detalle de compra)
 ## Metas personales
  - [ ] Comentar todo el código
- - [ ] Alojar en localhost
+ - [x] Alojar en netlify
  - [ ] Full Responsive
