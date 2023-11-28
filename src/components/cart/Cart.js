@@ -71,7 +71,7 @@ const Cart = () => { // * Funcion contructora
     return(
         
         <div className='CartContainer'>
-            {cartItems.length === 0  ? ( <h1 className='h1Warn'>No hay productos en el carrito! <Link to={"/productos"}>Productos</Link> </h1> ) 
+            {cartItems.length === 0  ? ( <h1 className='h1Warn'>No hay productos en el carrito! <Link to={"/productos"} rel='next'>Productos</Link> </h1> ) 
             : (
                 <>
                     <h1>Productos del carrito</h1>
